@@ -1,0 +1,46 @@
+.container {
+  width: 400px;
+}
+
+.navbar {
+  height: 40px;
+  padding: 5px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.contents {
+  display: flex;
+  height: 250px;
+}
+
+.sidebar {
+  padding: 10px;
+  border: 1px solid black;
+  margin-right: 10px;
+}
+
+.contents__main {
+  flex: 1;
+}
+
+.main {
+  display: flex;
+  flex-flow: column;
+}
+
+.post {
+  height: 70px;
+  padding: 5px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.main__comment {
+  flex: 1;
+}
+
+.comment {
+  padding: 5px;
+  border: 1px solid black;
+}
