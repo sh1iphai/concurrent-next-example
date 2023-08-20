@@ -1,5 +1,12 @@
+import { Suspense } from "react";
+import { SuspendMessage } from "./SuspendMessage";
+
 const Home = () => {
-  return <div>Hello Next.js</div>;
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <SuspendMessage />
+    </Suspense>
+  );
 };
 
 export default Home;
