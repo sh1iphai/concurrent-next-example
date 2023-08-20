@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { Navbar } from "./Navbar";
 import { Sidebar } from "./Sidebar";
 import { Post } from "./Post";
@@ -19,7 +20,9 @@ const Home = () => {
             <Post />
           </div>
           <div className={`${styles.main__comment} ${styles.comment}`}>
-            <Comments />
+            <Suspense fallback={<div>Loading...</div>}>
+              <Comments />
+            </Suspense>
           </div>
         </div>
       </div>
